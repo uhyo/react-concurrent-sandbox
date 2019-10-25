@@ -1,0 +1,18 @@
+{
+  "name": "react-concurrent-sandbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel serve src/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "uhyo",
+  "license": "MIT",
+  "devDependencies": {
+    "parcel": "^1.12.4",
+    "react": "0.0.0-experimental-f6b8d31a7",
+    "react-dom": "0.0.0-experimental-f6b8d31a7"
+  }
+}
