@@ -7,17 +7,21 @@ export const Example01 = () => {
   return (
     <>
       <h1>01 Example of Suspense</h1>
-      <Suspense fallback={<p>loading...</p>}>
-        {showChild ? (
+      {showChild ? (
+        <Suspense fallback={<p>loading...</p>}>
           <AdditionalContents />
-        ) : (
-          <button onClick={() => setShowChild(true)}>
-            追加コンテンツを表示
-          </button>
-        )}
-      </Suspense>
+        </Suspense>
+      ) : (
+        <button onClick={() => setShowChild(true)}>追加コンテンツを表示</button>
+      )}
     </>
   );
+};
+
+const AdditionalContents = () => {
+  // データをロードしてそのデータを表示
+  const data = getData();
+  return <p>{data}</p>;
 };
 
 let loadedData: string | null = null;
@@ -32,9 +36,4 @@ const getData = () => {
       loadedData = data;
     });
   }
-};
-
-const AdditionalContents = () => {
-  const data = getData();
-  return <p>{data}</p>;
 };
