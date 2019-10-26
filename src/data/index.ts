@@ -18,6 +18,6 @@ export const loadData = async (dataId: number): Promise<string> => {
     return "何か別の外部データ";
   } else {
     await sleep(500);
-    return "そんなデータないよ";
+    return `${dataId}番のデータはないよ`;
   }
 };
