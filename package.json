@@ -11,16 +11,19 @@
   "author": "uhyo",
   "license": "MIT",
   "devDependencies": {
-    "@babel/core": "^7.6.4",
+    "@babel/core": "^7.0.0-0",
+    "@babel/plugin-syntax-async-generators": "^7.2.0",
     "@babel/plugin-transform-runtime": "^7.6.2",
     "@types/react": "^16.9.11",
     "@types/react-dom": "^16.9.3",
+    "@types/styled-components": "^4.4.0",
     "parcel": "^1.12.4",
-    "react": "0.0.0-experimental-f6b8d31a7",
-    "react-dom": "0.0.0-experimental-f6b8d31a7",
+    "react": "0.0.0-experimental-b53ea6ca0",
+    "react-dom": "0.0.0-experimental-b53ea6ca0",
     "typescript": "^3.7.1-rc"
   },
   "dependencies": {
-    "@babel/runtime-corejs2": "^7.6.3"
+    "@babel/runtime-corejs2": "^7.6.3",
+    "styled-components": "^4.4.1"
   }
 }
