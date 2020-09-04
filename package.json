@@ -16,7 +16,7 @@
     "@types/react": "^16.9.11",
     "@types/react-dom": "^16.9.3",
     "parcel": "^1.12.4",
-    "react": "0.0.0-experimental-f6b8d31a7",
+    "react": "0.14.0",
     "react-dom": "0.0.0-experimental-f6b8d31a7",
     "typescript": "^3.7.1-rc"
   },
